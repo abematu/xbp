@@ -7,9 +7,8 @@
     <link rel="shortcut icon" href="./images/xbp.ico">
 </head>
 <body>
-    <h1>データサイエンス</h1>
-
-<a href="./files/20241015.pdf" target="_blank">参考資料</a>
+    <h1>見出し</h1>
+    <p>テキスト</p>
 
 </body>
 
