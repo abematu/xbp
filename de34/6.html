@@ -3,15 +3,15 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>おすすめのYouTube動画</title>
+  
 </head>
 <body>
-  <h1>おすすめのYouTube動画</h1>
+  <h1></h1>
 
   <!-- YouTube埋め込み動画 -->
   <iframe width="560" height="315"
     src="https://www.youtube.com/embed/ATVMuij2l9c
-
+
 光と動き
 www.youtube.com
 "
@@ -19,6 +19,18 @@ www.youtube.com
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+
+<h1>説明</h1>
+・光センサで設定したしきい値を超えたら起動<br>
+・hueの値を0から、360まで増やすことで、虹色のループを作成<br>
+・同じタイミングでモーターに電流を流して回転。<br>
+・さらに同時にsoptifyで音楽が流れる。<br>
+・アルディーノから信号を読み取るように、Pythonでプログラム待機状態にしておく。<br>
+
+<h1>まとめ</h1>
+・アルディーノはセンサーと制御担当<br>
+・パソコンがSpotify再生の実行担当<br>
+.両者がUSBケーブルとPythonで連携<br>
 
 </body>
 </html>
