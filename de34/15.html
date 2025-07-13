@@ -55,10 +55,44 @@
 <img src="./images/天悪側面.jpg"width=50%><br>
 <img src="./images/悪魔正面.jpg"width=50%><br>
 <br>
-■何度やってもコードがエラーになる<br>
-はんだ付けが完了したが、コードを実行しようにも、調べるほど問題が見つかって、増えていくばかりで一向に作業が進まない...<br>
-○回路を用いたコード連携は諦める、、<br>
-→スマホのアプリとPCを使ったIoTカラオケモジュールの作成にシフトする。<br>
+<h2>Day7</h2>
+   <div>🔳外側のパーツは完成したので回路を作成<br>
+        ○部品をハンダで繋げる<br>
+        ↓完成した回路<br>
+   <img src="./images/スクリーンショット 2025-07-13 23.02.51.png" width="40%">
+<br>使用したもの<br>
+    ・電池回路・EPS32・マイクモジュール・アンプモジュール・スピーカー
+   </div>
+
+<p></p>
+  <h2>Day8</h2>
+   <div>🔳コードの作成<br>
+        ○Pythonには、特定のキーワードと録音を入れておく。Arduinoは制御版（EPS32）とのやり取りのコードを作る。<br>
+<br>    🔳録音処理には、Flaskサーバーが必要<br>
+        ○チャットGPTをもとにサーバーの立ち上げをする。<br>
+        ⭐️ Flaskサーバー
+    <img src="./images/スクリーンショット 2025-07-13 23.26.30.png" width="45%">
+    <img src="./images/スクリーンショット 2025-07-13 23.26.54.png" width="45%">
+<p></p>
+  <h2>Day9</h2>
+    <div>🔳早速できたコードを試す<br>
+         →何故か制御版（EPS32）とPythonをネットで繋げようとするとエラー（ループが起こる）<br>
+         ※恐らく電力不足かショートによるもの（ネットの接続は電力を大量に使う）
+     <img src="./images/スクリーンショット 2025-07-13 23.40.32.png" width="50%">
+<br>     💦色々試すもEPS32がネットに繋がることはなかった</div>
+<p></p>
+  <h2>Day10</h2>
+    <div>🔳代替案を考える必要がある（7/12日現在）<br>
+         ○回路全般の役割をスマホに置き換える。→パソコンに特定のワードを言うとスマホでワードに対応した録音が再生される!
+<br>     🔳スマホとパソコンを繋げる手段んを考える。<br>
+         →チャットGPTによると、パソコンとスマホを繋げるアプリ（Pushbullet）と自動で録音を流すアプリ（Tasker）が必要らしい。詳しくは↓<br>
+<p></p>
+<img src="./images/スクリーンショット 2025-07-13 23.55.27.png" width="40%">
+<img src="./images/スクリーンショット 2025-07-13 23.55.38.png" width="40%">
+<br>.    Pushbulletに通知が来るとTaskerで特定の操作が行われる（今回の場合は悪魔の声援.wavを再生）
+    
+    
+    </div>
 
 
 
@@ -84,7 +118,17 @@
 
 <h1>完成</h1>
 
-<h2>使ったもの</h2>
+</div>
+<h1>3.使用したもの</h1>
+  <h2>1.アプリ</h2>
+    <a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm" target=_blank>・Tasker</a>
+    <a href="ttps://play.google.com/store/apps/details?id=com.pushbullet.android" target="_blank">・Pushbullet</a>
+<p>　</p>
+  <h2>2.機材</h2>
+   <h3>電池回路→・バッテリーケース　・TP4056　・18650リチウムイオン電池</h3>
+   <h3>マイク→・INMP441</h3>
+   <h3>制御装置→・EPS32</h3>
+   <h3>スピーカー→・MAX98357A　・小型ホームスピーカー</h3>
 
 <h2>紹介動画</h2>
 <iframe width="320" height="560"
